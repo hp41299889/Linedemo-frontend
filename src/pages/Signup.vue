@@ -1,16 +1,16 @@
 <template>
     <div class="canvas">
         <div class="content">
-            <Register />
+            <SignupVue />
         </div>
     </div>
 </template>
 
 <script>
-import Register from '../components/forms/Register.vue';
+import SignupVue from '../components/forms/Signup.vue';
 export default {
     components: {
-        Register
+        SignupVue
     }
 }
 </script>

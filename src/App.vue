@@ -1,10 +1,11 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import TheWelcome from './components/TheWelcome.vue'
+import { RouterLink, RouterView } from 'vue-router';
 </script>
 
 <template>
-  <header>
+  <!-- <header>
     <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
 
     <div class="wrapper">
@@ -14,11 +15,11 @@ import TheWelcome from './components/TheWelcome.vue'
 
   <main>
     <TheWelcome />
-  </main>
-  <router-view></router-view>
+  </main> -->
+  <RouterView />
 </template>
 
-<style scoped>
+<!-- <style scoped>
 header {
   line-height: 1.5;
 }
@@ -45,4 +46,4 @@ header {
     flex-wrap: wrap;
   }
 }
-</style>
+</style> -->
