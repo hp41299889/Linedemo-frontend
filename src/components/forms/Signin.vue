@@ -85,7 +85,7 @@ export default defineComponent({
         const { data} = res;
         const {status} = data;
         if(status == 'success') {
-          router.push({name: 'index'});
+          router.push({ name: 'profile' });
         };
       };
     };
@@ -94,7 +94,7 @@ export default defineComponent({
       console.log('Failed:', errorInfo);
     };
     const signupRoute = () => {
-      router.push({name: 'signup'});
+      router.push({ name: 'signup' });
     };
     const disabled = computed(() => {
       return !(formState.username && formState.password);

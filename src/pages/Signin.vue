@@ -1,6 +1,6 @@
 <template>
-    <div class="canvas">
-        <div class="content">
+    <div class="form">
+        <div>
             <SigninVue />
         </div>
     </div>
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style>
-.canvas {
+.form {
     display: flex;
     min-height: 768px;
     width: 100%;

@@ -4,7 +4,7 @@
       <a-button class="navbar-button" @click="signout">Sign out</a-button>
   </a-layout-header>
 </template>
-  <script lang="ts">
+<script lang="ts">
   import { defineComponent, ref } from 'vue';
   import { useRouter } from 'vue-router';
   import axios from 'axios';
@@ -22,7 +22,7 @@
           const {data}=res;
           const {status} = data;
           if(status == 'success') {
-            router.push({name: 'signin'});
+            router.push({ name: 'signin' });
           };
         };
       };
@@ -33,8 +33,8 @@
       };
     },
   });
-  </script>
-  <style>
+</script>
+<style>
   .navbar-button {
     margin: 4px;
   }
@@ -64,5 +64,4 @@
   [data-theme='dark'] .site-layout-content {
     background: #141414;
   }
-  </style>
-  
+</style>
